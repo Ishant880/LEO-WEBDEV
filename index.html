@@ -4,7 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and overall layout */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Main game container */
+        .game-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Card deck and individual card styling */
+        .card-deck {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            width: 50px;
+            height: 80px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-value {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        .card-suit {
+            font-size: 36px;
+        }
+
+        /* Button styling */
+        .start-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .start-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <div class="game-container">
